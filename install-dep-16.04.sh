@@ -65,7 +65,8 @@ sudo apt-get install -y \
     libmatio-dev \
     libpython-dev \
     libpython3-dev \
-    python-numpy
+    python-numpy \
+    liblua5.2-dev
 
 echo
 echo Cloning repositories
