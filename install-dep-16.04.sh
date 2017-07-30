@@ -155,11 +155,15 @@ echo
 echo 'Almost done!'
 echo
 
-git clone https://github.com/torch/nn && ( cd nn && git checkout getParamsByDevice && luarocks make rocks/nn-scm-1.rockspec )
+cd $dir
+git clone https://github.com/torch/nn 
+cd nn
+luarocks make rocks/nn-scm-1.rockspec 
 
-git clone https://github.com/facebook/fbtorch.git && ( cd fbtorch && luarocks make rocks/fbtorch-scm-1.rockspec )
-
-git clone https://github.com/facebook/fbnn.git && ( cd fbnn && luarocks make rocks/fbnn-scm-1.rockspec )
+cd $dir
+git clone https://github.com/jgoenetxea/fbtorch.git
+cd fbtorch 
+luarocks make rocks/fbtorch-scm-1.rockspec
 
 
 echo
