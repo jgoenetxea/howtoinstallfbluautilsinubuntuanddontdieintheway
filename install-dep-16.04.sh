@@ -19,8 +19,11 @@ current=0
 if [[ $issue =~ ^Ubuntu\ 16\.04 ]]; then
     extra_packages=libiberty-dev
     current=1
+elif [[ $issue =~ ^Ubuntu\ 17\.04 ]]; then
+	extra_packages=libiberty-dev
+    current=1
 else
-    echo "Ubuntu 16.04 required" >&2
+    echo "Ubuntu 16.04 or 17.04 required" >&2
     exit 1
 fi
 

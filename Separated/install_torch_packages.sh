@@ -1,0 +1,11 @@
+luarocks install cutorch
+luarocks install nn
+luarocks install nngraph
+luarocks install cudnn
+luarocks install xlua
+luarocks install image
+luarocks install paths
+# extra dependencies
+luarocks install cunn
+luarocks install matio
+luarocks install npy4th
